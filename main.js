@@ -3,7 +3,6 @@ var computerWins = 0
 var choices = ["scissor", "rock", "paper"]
 
 
-
 $(document).ready(function(){
     for(var i = 0; i < choices.length; i++){
         var button = $("<button>").addClass('button').text(choices[i])
