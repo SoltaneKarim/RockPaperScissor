@@ -1,14 +1,14 @@
-.game-box {
+/* .game-box {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
-  }
-  .button {
+  } */
+  /* .button {
     padding: 10px 20px;
     font-size: 18px;
     margin: 0 10px;
-  }
+  } */
   body{
     background-size: cover;
   }
@@ -20,8 +20,4 @@
   .logoo{
     height: 160px;
     width: 250px;
-  }
-  h1{
-    text-align: center;
-    
   }
