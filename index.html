@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Scissor Game</title>
+<title>Scissor Game</title>
 <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body background="assets/images/background1.jpeg">
-  <img class="logoo" src="assets/images/logo_Bros-removebg-preview.png">
-  <img class="logooo" src="assets/images/rps.png" alt="">
-  <div class="game-box"></div>
-  <div id="user-choice"></div>
-  <div id="computer-choice"></div>
-  <div id="result"></div>
-  <div id="user-wins">Your wins: 0</div>
-  <div id="computer-wins">Computer wins: 0</div>
-  <div id="game-over"></div>
+<audio id="audio" autoplay>
+<source src="./assets/audio/hip-hop.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<img class="logoo" src="assets/images/logo_Bros-removebg-preview.png">
+<img class="logooo" src="assets/images/rps.png" alt="">
+<div class="game-box">
+<div class="score">
+<div id="user-wins">
+<h1>User</h1>
+<span>0</span>
+</div>
+<div id="computer-wins">
+<h1>Robot</h1>
+<span>0</span>
+</div>
+</div>
+<div class="choices">
+<img class="choices-image" src="https://github.com/SoltaneKarim/RockPaperScissor/blob/main/assets/images/scissor.png?raw=true" alt="scissor">
+<img class="choices-image" src="https://github.com/SoltaneKarim/RockPaperScissor/blob/main/assets/images/rock.png?raw=true" alt="rock">
+<img class="choices-image" src="https://github.com/SoltaneKarim/RockPaperScissor/blob/main/assets/images/paper.png?raw=true" alt="paper">
+</div>
+</div>
+<div id="user-choice"><span></span></div>
+<div id="computer-choice"><span></span></div>
+<div id="result"><h1></h1></div>
+<div id="game-over"><h1></h1></div>
 <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
 <script src="main.js"></script>
-<!-- <button class="GFG" 
-onclick="window.location.href = 'index2.html';">
-    Special offer
-</button> -->
 </body>
+<footer>
+<div id="reset"><button onClick="restartGame()">Play Again</button></div>
+</footer>
 </html>

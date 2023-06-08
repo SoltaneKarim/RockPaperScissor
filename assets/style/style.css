@@ -1,27 +1,83 @@
-.game-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-  }
-  .button {
-    padding: 10px 20px;
-    font-size: 18px;
-    margin: 0 10px;
+html, body {
+  width: 100%;
   }
   body{
-    background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  }
+  footer {
+  position: fixed;
+  bottom: 150px;
+  width: 100%;
   }
   .logooo{
-    height: 160px;
-    width: 350px;
-    float: right;
+  height: 160px;
+  width: 350px;
+  float: right;
   }
   .logoo{
-    height: 160px;
-    width: 250px;
+  height: 160px;
+  width: 250px;
   }
-  h1{
-    text-align: center;
-    
+  .score {
+  display: flex;
+  justify-content: center;
+  border: 4px solid black;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  }
+  .choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .choices-image {
+  width: 120px;
+  height: 100px;
+  cursor: pointer;
+  border: 4px solid black;
+  border-radius: 8px;
+  margin-right: 4px;
+  }
+  .choices-image:hover {
+  background-color: rgb(255, 106, 0);
+  }
+  #user-wins span {
+  font-size: 90px;
+  line-height: 90px;
+  margin-right: 4rem;
+  }
+  #computer-wins span {
+  font-size: 90px;
+  line-height: 90px;
+  display: table;
+  margin: 0 auto;
+  }
+  #user-choice {
+  font-size: 30px;
+  }
+  #computer-choice {
+  font-size: 30px;
+  }
+  #result h1 {
+  color: rgb(0, 0, 255);
+  font-size: 40px;
+  }
+  #game-over h1 {
+  font-size: 60px;
+  }
+  #reset {
+  display: flex;
+  justify-content: center;
+  }
+  #reset button {
+  width: 322px;
+  height: 110px;
+  font-size: 44px;
+  border-radius: 8px;
+  cursor: pointer;
+  }
+  #reset button:hover {
+  background-color: rgb(255, 174, 0);
   }
